@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please sign up to enter in a app."
+            android:gravity="center"
+            android:textColor="#778899"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter via social networks"
+            android:gravity="center"
+            android:textColor="#778899"
+            android:layout_marginTop="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_height="70dp"
+            >
+            <ImageButton
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:height="60dp"
+                android:backgroundTint="#7BB3E1"
+                android:drawablePadding="6dp"
+                android:padding="6dp"
+                android:src="@drawable/twitter" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:layout_height="fill_parent"
+                android:src="@drawable/facebook"
+                android:drawablePadding="6dp"
+                android:height="60dp"
+                android:padding="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="#044376"
+                android:layout_width="10dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or sign up with email"
+            android:gravity="center"
+            android:textColor="#778899"
+            android:layout_marginTop="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Password"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cb_agree"
+                android:checked="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="I agree with Private Policy" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="70dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:text="Sign Up"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:text="Don't have an account?"
+                android:gravity="end"
+                android:textColor="#778899"
+                android:layout_weight="2"
+                />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:text="Login"
+                android:gravity="start"
+                android:textColor="#0F6CF6"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
